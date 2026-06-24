@@ -4,7 +4,7 @@
 
 // Her name and photo (replace with actual image path)
 const NAME = 'Rotem';
-const NAME_IMAGE = '/assets/images/rotem.jpeg';
+const NAME_IMAGE = './assets/images/rotem.jpeg';
 
 // Famous people photos — add image URLs for each person
 const PERSON_IMAGES = {

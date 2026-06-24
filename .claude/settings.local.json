@@ -13,7 +13,10 @@
       "Bash(npx -y http-server -p 8080 --cors -c-1)",
       "mcp__plugin_playwright_playwright__browser_click",
       "mcp__plugin_playwright_playwright__browser_evaluate",
-      "Bash(git status *)"
+      "Bash(git status *)",
+      "Bash(gh api *)",
+      "Bash(xargs -0 -I{} git ls-tree -r -l HEAD -- {})",
+      "Bash(awk '{sum += $4} END {printf \"%.1f MB\\\\n\", sum/1024/1024}')"
     ]
   }
 }

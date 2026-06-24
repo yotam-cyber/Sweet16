@@ -2,7 +2,7 @@
 // Plays "Risk It All" on loop. Mute/unmute toggle in corner.
 // Ducks (pauses) when the timeline audio slide plays.
 
-const BG_TRACK = '/assets/audio/Risk It All.mp3';
+const BG_TRACK = './assets/audio/Risk It All.mp3';
 
 let audio = null;
 let muted = false;

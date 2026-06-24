@@ -2,10 +2,10 @@
 // Each entry: image path and optional caption
 
 const PROOFS = [
-  { src: '/assets/images/screenshots/1.jpeg', caption: '' },
-  { src: '/assets/images/screenshots/2.jpeg', caption: '' },
-  { src: '/assets/images/screenshots/3.jpeg', caption: '' },
-  { src: '/assets/images/screenshots/4.jpeg', caption: '' },
+  { src: './assets/images/screenshots/1.jpeg', caption: '' },
+  { src: './assets/images/screenshots/2.jpeg', caption: '' },
+  { src: './assets/images/screenshots/3.jpeg', caption: '' },
+  { src: './assets/images/screenshots/4.jpeg', caption: '' },
 ];
 
 export function initProof() {

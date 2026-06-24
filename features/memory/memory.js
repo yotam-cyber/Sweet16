@@ -3,18 +3,18 @@
 // e.g. '../../assets/images/card1.jpg'
 
 const CARD_IMAGES = [
-  { id: 1,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.03.59.jpeg' },
-  { id: 2,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.03.59 (1).jpeg' },
-  { id: 3,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01.jpeg' },
-  { id: 4,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (1).jpeg' },
-  { id: 5,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (2).jpeg' },
-  { id: 6,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (3).jpeg' },
-  { id: 7,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (4).jpeg' },
-  { id: 8,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.02.jpeg' },
-  { id: 9,  src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.02 (1).jpeg' },
-  { id: 10, src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03.jpeg' },
-  { id: 11, src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03 (1).jpeg' },
-  { id: 12, src: '/assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03 (2).jpeg' },
+  { id: 1,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.03.59.jpeg' },
+  { id: 2,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.03.59 (1).jpeg' },
+  { id: 3,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01.jpeg' },
+  { id: 4,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (1).jpeg' },
+  { id: 5,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (2).jpeg' },
+  { id: 6,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (3).jpeg' },
+  { id: 7,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.01 (4).jpeg' },
+  { id: 8,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.02.jpeg' },
+  { id: 9,  src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.02 (1).jpeg' },
+  { id: 10, src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03.jpeg' },
+  { id: 11, src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03 (1).jpeg' },
+  { id: 12, src: './assets/images/memory/WhatsApp Image 2026-06-24 at 17.04.03 (2).jpeg' },
 ];
 
 export function initMemory(onComplete) {
@@ -44,7 +44,7 @@ export function initMemory(onComplete) {
 
   // Insert star at center (index 12 in a 5x5 grid)
   // Replace src with your center image path, e.g. '../../assets/images/center.jpg'
-  pairs.splice(12, 0, { id: 'star', type: 'star', src: '/assets/images/memory/center.jpeg' });
+  pairs.splice(12, 0, { id: 'star', type: 'star', src: './assets/images/memory/center.jpeg' });
 
   // Build cards
   pairs.forEach((item, i) => {

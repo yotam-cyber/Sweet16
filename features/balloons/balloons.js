@@ -4,9 +4,9 @@
 
 const SENTENCES = [
   { text: 'את הדבר הכי יפה שקרה לי',  image: 'https://kh.wiki.gallery/images/2/24/Nick_Wilde_KHUX.png', colorIndex: 5 },
-  { text: 'החיוך שלך מאיר את כל החדר',  image: '/assets/images/smile.jpeg' },
+  { text: 'החיוך שלך מאיר את כל החדר',  image: './assets/images/smile.jpeg' },
   { text: 'אין עלייך בשום מקום בעולם והייתי בהרבה מקומות',  image: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Stitch_%28Lilo_%26_Stitch%29.svg/250px-Stitch_%28Lilo_%26_Stitch%29.svg.png', colorIndex: 1 },
-  { text: 'כל רגע איתך שווה הכל',  image: '/assets/images/moment.jpeg' },
+  { text: 'כל רגע איתך שווה הכל',  image: './assets/images/moment.jpeg' },
   { text: 'מגיע לך הכל',  image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhurGlU0MrCQ21kaWm2G2qRd9yp_ZmgwHDUKXSJips-Q&s=10', colorIndex: 3 },
   { text: 'אני מתגעגע אלייך כל דקה',  image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/54/ca/fe/caption.jpg?w=1100&h=1100&s=1' },
   { text: 'איתך אני מרגיש הכי בבית',  image: 'https://matkonimil.co.il/wp-content/uploads/2018/09/WhatsApp-Image-2018-09-16-at-22.12.15-e1537125353325.jpeg' },
