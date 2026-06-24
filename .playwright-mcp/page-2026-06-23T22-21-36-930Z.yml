@@ -1,0 +1,12 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Catch the Balloons!" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Tap them before they fly away
+    - generic [ref=e6]:
+      - text: "Caught:"
+      - generic [ref=e7]: "0"
+      - text: / 10
+  - generic [ref=e8] [cursor=pointer]:
+    - generic: Catch the balloons!
+    - generic:
+      - heading [level=3]

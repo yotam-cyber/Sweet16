@@ -1,0 +1,8 @@
+- generic [ref=e3]:
+  - heading "A letter for you" [level=2] [ref=e4]
+  - generic [ref=e6]:
+    - paragraph [ref=e7]: <final letter paragraph 1>
+    - paragraph [ref=e8]: <final letter paragraph 2>
+    - paragraph [ref=e9]: <final letter paragraph 3>
+    - paragraph [ref=e10]: <final letter paragraph 4>
+    - paragraph [ref=e11]: With love, <your name>

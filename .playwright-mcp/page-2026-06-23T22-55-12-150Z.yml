@@ -1,0 +1,10 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading "Happy Sweet 16!" [level=1] [ref=e4]
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Dear <name>,
+      - paragraph [ref=e7]: <small letter>
+    - button "Open Your Gift" [ref=e8] [cursor=pointer]:
+      - text: Open Your Gift
+      - img [ref=e9]
+  - text: “ ”

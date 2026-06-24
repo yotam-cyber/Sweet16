@@ -1,0 +1,21 @@
+[     657ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'referrer'. @ :0
+[     658ms] [ERROR] Unrecognized Content-Security-Policy directive 'referrer-policy'. @ https://kettakihome.com/click?trvid=11098&extid=1093644026118411395&var1=10327547&var2=24635609&var3=10005432&var4=2a06%3Ac701%3A4902%3Ac600%3A85a2%3A34cf%3Acd94%3A7f12&var5=chrome&var6=windows&var7=win11&var8=ha&var9=en&var10=149:0
+[     740ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'referrer'. @ :0
+[     741ms] [ERROR] Unrecognized Content-Security-Policy directive 'referrer-policy'. @ https://kettakihome.com/double?t=2&d=eyJVUkwiOiJodHRwczovL3MuY2xpY2suYWxpZXhwcmVzcy5jb20vZS9fYzJ3ZzZiREw_ZHA9NkxRNzlzaWdrdjR5XHUwMDI2YWY9NVhXUlVtdjdVSXpNIiwiUmVkaXJlY3RXb3JkaW5nIjoiUmVkaXJlY3RpbmcuLi4iLCJSZWRpcmVjdFRpdGxlIjoiUmVkaXJlY3Rpb24uLi4iLCJSZWRpcmVjdExpbmtUZXh0IjoiQ2xpY2sgaGVyZSB0byBjb250aW51ZS4iLCJJbnN0YWxsSWQiOjM3MjV9:0
+[    2053ms] [WARNING] Setting secure=true because sameSite=None requires secure cookies @ https://assets.alicdn.com/g/lzd_sec/LWSC-G/index.js:0
+[    2055ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://assets.alicdn.com/g/??/AWSC/AWSC/awsc.js,/sd/baxia-entry/baxiaCommon.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://assets.alicdn.com/g/lzd_sec/LWSC-G/index.js:0
+[    2055ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://assets.alicdn.com/g/??/AWSC/AWSC/awsc.js,/sd/baxia-entry/baxiaCommon.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://assets.alicdn.com/g/lzd_sec/LWSC-G/index.js:0
+[    2240ms] [LOG] Wed Jun 24 2026 16:43:01 GMT+0300 (Israel Daylight Time) @ https://assets.aliexpress-media.com/g/AWSC/et/1.83.41/et_f.js:1
+[    2323ms] [LOG] [Cookie Guard] 当前页面 "aff-fail-over" 不在允许的页面列表中，跳过初始化 {allowedPages: Array(3), currentPage: aff-fail-over} @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/loader.js:0
+[    2333ms] [WARNING] 'et' should been 'EXP','CLK','SLD','INPUT','SYS', 'OTHER' @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0
+[    2599ms] [LOG] load css succ @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/index.js:0
+[    2648ms] [LOG] load succ @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/index.js:0
+[    2815ms] [LOG] {"cfg":{},"tid":"3dKoStGSbaGH0hqGk3uTuw=="} @ https://assets.alicdn.com/g/??/AWSC/AWSC/awsc.js,/sd/baxia-entry/baxiaCommon.js:0
+[    3082ms] [LOG] ✨ 流程启动：弹层展示-二合一 @ https://assets.aliexpress-media.com/g/gcom/ug-comp-assets/1.1.73/batman.js:6
+[    6403ms] [LOG] MOVED ➡️ 切换阶段到：页面销毁 @ https://assets.aliexpress-media.com/g/gcom/ug-comp-assets/1.1.73/batman.js:6
+[    6403ms] [LOG] ENDED-REPORT @ https://assets.aliexpress-media.com/g/gcom/ug-comp-assets/1.1.73/batman.js:6
+[    6431ms] [WARNING] [AES tracker-plugin-event] At lease one augument @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0
+[    6432ms] [WARNING] [AES tracker-plugin-event] At lease one augument @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0
+[    6432ms] [WARNING] [AES tracker-plugin-event] At lease one augument @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0
+[    6432ms] [WARNING] [AES tracker-plugin-event] At lease one augument @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0
+[    6432ms] [WARNING] [AES tracker-plugin-event] At lease one augument @ https://assets.aliexpress-media.com/g/ae-fe/cosmos/0.0.432/pc/gep-sdk.js:0

@@ -1,0 +1,2 @@
+[     314ms] [ERROR] Failed to load resource: the server responded with a status of 426 (Upgrade Required) @ http://localhost:3001/index.html:0
+[     350ms] [ERROR] Failed to load resource: the server responded with a status of 426 (Upgrade Required) @ http://localhost:3001/favicon.ico:0

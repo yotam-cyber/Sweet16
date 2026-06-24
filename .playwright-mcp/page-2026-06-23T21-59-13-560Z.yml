@@ -1,0 +1,89 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Memory Game" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Match the pairs!
+    - generic [ref=e6]:
+      - text: "Moves:"
+      - generic [ref=e7]: "0"
+  - generic [ref=e8]:
+    - generic [ref=e10] [cursor=pointer]:
+      - generic [ref=e11]: "?"
+      - generic [ref=e13]: <card 7>
+    - generic [ref=e15] [cursor=pointer]:
+      - generic [ref=e16]: "?"
+      - generic [ref=e18]: <card 2>
+    - generic [ref=e20] [cursor=pointer]:
+      - generic [ref=e21]: "?"
+      - generic [ref=e23]: <card 10>
+    - generic [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: "?"
+      - generic [ref=e28]: <card 7>
+    - generic [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: "?"
+      - generic [ref=e33]: <card 11>
+    - generic [ref=e35] [cursor=pointer]:
+      - generic [ref=e36]: "?"
+      - generic [ref=e38]: <card 3>
+    - generic [ref=e40] [cursor=pointer]:
+      - generic [ref=e41]: "?"
+      - generic [ref=e43]: <card 8>
+    - generic [ref=e45] [cursor=pointer]:
+      - generic [ref=e46]: "?"
+      - generic [ref=e48]: <card 3>
+    - generic [ref=e50] [cursor=pointer]:
+      - generic [ref=e51]: "?"
+      - generic [ref=e53]: <card 6>
+    - generic [ref=e55] [cursor=pointer]:
+      - generic [ref=e56]: "?"
+      - generic [ref=e58]: <card 10>
+    - generic [ref=e60] [cursor=pointer]:
+      - generic [ref=e61]: "?"
+      - generic [ref=e63]: <card 5>
+    - generic [ref=e65] [cursor=pointer]:
+      - generic [ref=e66]: "?"
+      - generic [ref=e68]: <card 1>
+    - generic:
+      - generic:
+        - generic: ★
+        - generic:
+          - generic: <center image>
+    - generic [ref=e70] [cursor=pointer]:
+      - generic [ref=e71]: "?"
+      - generic [ref=e73]: <card 9>
+    - generic [ref=e75] [cursor=pointer]:
+      - generic [ref=e76]: "?"
+      - generic [ref=e78]: <card 2>
+    - generic [ref=e80] [cursor=pointer]:
+      - generic [ref=e81]: "?"
+      - generic [ref=e83]: <card 5>
+    - generic [ref=e85] [cursor=pointer]:
+      - generic [ref=e86]: "?"
+      - generic [ref=e88]: <card 4>
+    - generic [ref=e90] [cursor=pointer]:
+      - generic [ref=e91]: "?"
+      - generic [ref=e93]: <card 8>
+    - generic [ref=e95] [cursor=pointer]:
+      - generic [ref=e96]: "?"
+      - generic [ref=e98]: <card 4>
+    - generic [ref=e100] [cursor=pointer]:
+      - generic [ref=e101]: "?"
+      - generic [ref=e103]: <card 9>
+    - generic [ref=e105] [cursor=pointer]:
+      - generic [ref=e106]: "?"
+      - generic [ref=e108]: <card 1>
+    - generic [ref=e110] [cursor=pointer]:
+      - generic [ref=e111]: "?"
+      - generic [ref=e113]: <card 12>
+    - generic [ref=e115] [cursor=pointer]:
+      - generic [ref=e116]: "?"
+      - generic [ref=e118]: <card 12>
+    - generic [ref=e120] [cursor=pointer]:
+      - generic [ref=e121]: "?"
+      - generic [ref=e123]: <card 6>
+    - generic [ref=e125] [cursor=pointer]:
+      - generic [ref=e126]: "?"
+      - generic [ref=e128]: <card 11>
+  - generic:
+    - heading "You did it!" [level=3]
+    - paragraph: You finished in 0 moves
+    - paragraph: <transition text>

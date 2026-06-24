@@ -1,0 +1,112 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "A little trip down memory lane" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Scroll down to explore
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - img "<caption 1>" [ref=e9]
+      - generic [ref=e10]: <caption 1>
+    - generic:
+      - generic:
+        - img "<caption 2>"
+        - generic: <caption 2>
+    - generic:
+      - generic:
+        - img "<caption 3>"
+        - generic: <caption 3>
+    - generic:
+      - generic:
+        - img "<caption 4>"
+        - generic: <caption 4>
+    - generic:
+      - generic:
+        - img "<caption 5>"
+        - generic: <caption 5>
+    - generic:
+      - generic:
+        - img "<caption 6>"
+        - generic: <caption 6>
+    - generic:
+      - generic:
+        - img "<caption 7>"
+        - generic: <caption 7>
+    - generic:
+      - generic:
+        - img "<caption 8>"
+        - generic: <caption 8>
+    - generic:
+      - generic:
+        - img "<caption 9>"
+        - generic: <caption 9>
+    - generic:
+      - generic:
+        - img "<caption 10>"
+        - generic: <caption 10>
+    - generic:
+      - generic:
+        - img "<caption 11>"
+        - generic: <caption 11>
+    - generic:
+      - generic:
+        - img "<caption 12>"
+        - generic: <caption 12>
+    - generic:
+      - generic:
+        - img "<caption 13>"
+        - generic: <caption 13>
+    - generic:
+      - generic:
+        - img "<caption 14>"
+        - generic: <caption 14>
+    - generic:
+      - generic:
+        - img "<caption 15>"
+        - generic: <caption 15>
+    - generic:
+      - generic:
+        - img "<caption 16>"
+        - generic: <caption 16>
+    - generic:
+      - generic:
+        - img "<caption 17>"
+        - generic: <caption 17>
+    - generic:
+      - generic:
+        - img "<caption 18>"
+        - generic: <caption 18>
+    - generic:
+      - generic:
+        - generic: <caption 19>
+    - generic:
+      - generic:
+        - img "<caption 20>"
+        - generic: <caption 20>
+    - generic:
+      - generic:
+        - generic: <caption 21>
+    - generic:
+      - generic:
+        - img "<caption 22>"
+        - generic: <caption 22>
+    - generic:
+      - generic:
+        - img "<caption 23>"
+        - generic: <caption 23>
+    - generic:
+      - generic:
+        - img "<caption 24>"
+        - generic: <caption 24>
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic: ♫
+            - generic: Ne-Yo - She Knows
+        - generic: Ne-Yo - She Knows
+  - generic [ref=e11]: 1 / 25
+  - generic [ref=e12]:
+    - generic [ref=e13]: Scroll down
+    - img [ref=e14]
+  - generic:
+    - heading "That was fun, right?" [level=3]
+    - paragraph: <transition text>

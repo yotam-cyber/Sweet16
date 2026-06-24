@@ -1,0 +1,13 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Who Said It?" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Guess who said each quote
+    - generic [ref=e6]: 1 / 10
+  - paragraph [ref=e8]: “ <quote 1> ”
+  - generic [ref=e9]:
+    - button "Eminem" [ref=e10] [cursor=pointer]
+    - button "<name>" [ref=e11] [cursor=pointer]
+  - generic:
+    - heading "Results" [level=3]
+    - generic: 0 / 10
+    - paragraph

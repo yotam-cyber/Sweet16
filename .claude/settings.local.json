@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(npx -y serve -l 3000)",
+      "Bash(npx -y http-server -p 3001 -c-1 --silent)",
+      "PowerShell(Start-Process python -ArgumentList \"-m\", \"http.server\", \"3002\", \"--directory\", \"C:\\\\Users\\\\User\\\\Desktop\\\\projects\\\\Rotem Birthday Test\" -WindowStyle Hidden)",
+      "PowerShell(Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 3000,3001,3002 } | Select-Object LocalPort, OwningProcess)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "PowerShell(Get-Process -Id 63304, 63980 -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "Bash(npx -y http-server -p 8080 --cors -c-1)",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_evaluate"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "A little trip down memory lane" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Scroll down to explore
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: <photo 1>
+      - generic [ref=e10]: <caption 1>
+    - generic:
+      - generic:
+        - generic: <photo 2>
+        - generic: <caption 2>
+    - generic:
+      - generic:
+        - generic: <photo 3>
+        - generic: <caption 3>
+    - generic:
+      - generic:
+        - generic: <photo 4>
+        - generic: <caption 4>
+    - generic:
+      - generic:
+        - generic: <photo 5>
+        - generic: <caption 5>
+    - generic:
+      - generic:
+        - generic: <photo 6>
+        - generic: <caption 6>
+    - generic:
+      - generic:
+        - generic: <photo 7>
+        - generic: <caption 7>
+    - generic:
+      - generic:
+        - generic:
+          - img
+        - generic: <caption 8>
+    - generic:
+      - generic:
+        - generic: <photo 8>
+        - generic: <caption 9>
+    - generic:
+      - generic:
+        - generic: <photo 9>
+        - generic: <caption 10>
+    - generic:
+      - generic:
+        - generic: <photo 10>
+        - generic: <caption 11>
+    - generic:
+      - generic:
+        - generic: <photo 11>
+        - generic: <caption 12>
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic: ♫
+        - generic: <song title>
+    - generic:
+      - generic:
+        - generic: <photo 12>
+        - generic: <caption 13>
+    - generic:
+      - generic:
+        - generic: <photo 13>
+        - generic: <caption 14>
+    - generic:
+      - generic:
+        - generic: <photo 14>
+        - generic: <caption 15>
+    - generic:
+      - generic:
+        - generic: <photo 15>
+        - generic: <caption 16>
+    - generic:
+      - generic:
+        - generic:
+          - img
+        - generic: <caption 17>
+    - generic:
+      - generic:
+        - generic: <photo 16>
+        - generic: <caption 18>
+    - generic:
+      - generic:
+        - generic: <photo 17>
+        - generic: <caption 19>
+    - generic:
+      - generic:
+        - generic: <photo 18>
+        - generic: <caption 20>
+    - generic:
+      - generic:
+        - generic: <photo 19>
+        - generic: <caption 21>
+    - generic:
+      - generic:
+        - generic: <photo 20>
+        - generic: <caption 22>
+    - generic:
+      - generic:
+        - generic: <photo 21>
+        - generic: <caption 23>
+    - generic:
+      - generic:
+        - generic: <photo 22>
+        - generic: <caption 24>
+  - generic [ref=e37]:
+    - generic [ref=e38]: Scroll down
+    - img [ref=e39]
+  - generic:
+    - heading "That was fun, right?" [level=3]
+    - paragraph: <transition text>

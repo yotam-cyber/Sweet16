@@ -1,0 +1,34 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "A little trip down memory lane" [level=2] [ref=e4]
+    - paragraph [ref=e5]: Scroll down to explore
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]: <photo 1>
+      - generic [ref=e10]: <caption 1>
+    - generic:
+      - generic:
+        - generic: <photo 2>
+        - generic: <caption 2>
+    - generic:
+      - generic:
+        - generic: <photo 3>
+        - generic: <caption 3>
+    - generic:
+      - generic:
+        - generic: <photo 4>
+        - generic: <caption 4>
+    - generic:
+      - generic:
+        - generic: <photo 5>
+        - generic: <caption 5>
+    - generic:
+      - generic:
+        - generic: <photo 6>
+        - generic: <caption 6>
+  - generic [ref=e18]:
+    - generic [ref=e19]: Scroll down
+    - img [ref=e20]
+  - generic:
+    - heading "That was fun, right?" [level=3]
+    - paragraph: <transition text>
