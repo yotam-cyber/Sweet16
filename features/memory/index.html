@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game - Sweet 16</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+
+  <section class="memory">
+    <div class="memory__header">
+      <h2>Memory Game</h2>
+      <p class="subtitle">Match the pairs!</p>
+      <div class="memory__moves">Moves: <span class="memory__moves-count">0</span></div>
+    </div>
+
+    <div class="memory__grid">
+      <!-- JS populates 5x5 card grid -->
+    </div>
+
+    <div class="memory__complete">
+      <h3>You did it!</h3>
+      <p>You finished in <span class="memory__score">0</span> moves</p>
+      <p>&lt;transition text&gt;</p>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initMemory } from './memory.js';
+
+    initMemory(() => {
+      console.log('Memory game complete!');
+    });
+  </script>
+</body>
+</html>

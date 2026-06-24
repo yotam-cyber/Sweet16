@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing - Sweet 16</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+  <!-- ========== LANDING PAGE (fullscreen overlay) ========== -->
+  <div id="landing" class="landing">
+    <div class="landing__shapes" aria-hidden="true"></div>
+    <div class="landing__card card fade-in">
+      <h1 class="landing__title">Happy Sweet 16!</h1>
+      <div class="landing__letter">
+        <p class="font-script landing__dear">Dear <span class="placeholder-name">&lt;name&gt;</span>,</p>
+        <p class="landing__body">&lt;small letter&gt;</p>
+      </div>
+      <button id="landing-btn" class="btn btn--primary pulse" type="button">
+        Open Your Gift
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Demo: what shows after clicking the button -->
+  <main id="after-landing" style="display:none; min-height:100dvh; display:none; align-items:center; justify-content:center; text-align:center; padding:2rem;">
+    <div>
+      <h2 style="font-family:'Fredoka',sans-serif; color:var(--clr-text);">Landing complete!</h2>
+      <p style="color:var(--clr-text-secondary); margin-top:0.5rem;">The transition worked. In the full site this reveals the welcome section.</p>
+    </div>
+  </main>
+
+  <script type="module">
+    import { initLanding } from './landing.js';
+
+    initLanding(() => {
+      const after = document.getElementById('after-landing');
+      after.style.display = 'flex';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Sweet 16!</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="features/landing/landing.css">
+  <link rel="stylesheet" href="features/welcome/welcome.css">
+  <link rel="stylesheet" href="features/timeline/timeline.css">
+  <link rel="stylesheet" href="features/memory/memory.css">
+  <link rel="stylesheet" href="features/balloons/balloons.css">
+  <link rel="stylesheet" href="features/quiz/quiz.css">
+  <link rel="stylesheet" href="features/proof/proof.css">
+  <link rel="stylesheet" href="features/letter/letter.css">
+  <link rel="stylesheet" href="features/finale/finale.css">
+</head>
+<body>
+
+  <!-- ========== LANDING PAGE (fullscreen overlay) ========== -->
+  <div id="landing" class="landing">
+    <div class="landing__shapes" aria-hidden="true"></div>
+    <div class="landing__card card fade-in">
+      <h1 class="landing__title">Happy Sweet 16!</h1>
+      <div class="landing__letter">
+        <p class="font-script landing__dear">Dear <span class="placeholder-name">Rotem</span>,</p>
+        <p class="landing__body">!זה לקח לי המון זמן אז מקווה שתעריכי ותהני</p>
+      </div>
+      <button id="landing-btn" class="btn btn--primary pulse" type="button">
+        Open Your Gift
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== MUSIC TOGGLE (always visible after landing) ========== -->
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Toggle music" hidden>
+    <svg class="music-toggle__icon music-toggle__icon--off" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+      <line x1="1" y1="1" x2="23" y2="23" class="music-toggle__slash"/>
+    </svg>
+    <svg class="music-toggle__icon music-toggle__icon--on" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+      <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+    </svg>
+  </button>
+
+  <!-- ========== MAIN SCROLLABLE SITE ========== -->
+  <main id="app" hidden>
+
+    <!-- ===== WELCOME ===== -->
+    <section id="welcome" class="section section--fullscreen welcome">
+      <h2 class="welcome__title">I've made some things to celebrate your birthday</h2>
+      <p class="welcome__subtitle text-secondary">I hope you enjoy every single one</p>
+      <div class="welcome__scroll-hint">
+        <span class="text-secondary">Scroll down</span>
+        <div class="bounce-arrow" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO TIMELINE ===== -->
+    <section id="timeline" class="section section--game timeline gated">
+      <div class="timeline__header">
+        <h2>A little trip down memory lane</h2>
+        <p class="subtitle">Scroll down to explore</p>
+      </div>
+      <div class="timeline__wheel"></div>
+      <div class="timeline__dots"></div>
+      <div class="timeline__hint">
+        <span>Scroll down</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+      <div class="timeline__complete">
+        <h3>That was fun, right?</h3>
+        <p>מקווה שנהנת כי זה היה חמוד לדעתי</p>
+        <button class="btn btn--primary" data-continue>Continue</button>
+      </div>
+    </section>
+
+    <!-- ===== MEMORY CARD GAME ===== -->
+    <section id="memory" class="section section--game memory gated">
+      <div class="memory__header">
+        <h2>Memory Game</h2>
+        <p class="subtitle">Match the pairs!</p>
+        <div class="memory__moves">Moves: <span class="memory__moves-count">0</span></div>
+      </div>
+      <div class="memory__grid"></div>
+      <div class="memory__complete">
+        <h3>You did it!</h3>
+        <p>You finished in <span class="memory__score">0</span> moves</p>
+        <p>Brains ✓ Now let's test your reflexes</p>
+        <button class="btn btn--primary" data-continue>Continue</button>
+      </div>
+    </section>
+
+    <!-- ===== BALLOON POP GAME ===== -->
+    <section id="balloons" class="section section--game balloons gated">
+      <div class="balloons__header">
+        <h2>Catch the Balloons!</h2>
+        <p class="subtitle">Tap them before they fly away</p>
+        <div class="balloons__score">Caught: <span class="balloons__caught-count">0</span> / 10</div>
+      </div>
+      <div class="balloons__arena">
+        <canvas class="balloons__canvas"></canvas>
+        <div class="balloons__flash">Catch the balloons!</div>
+        <div class="balloons__sentence"></div>
+        <div class="balloons__complete">
+          <h3 class="balloons__result-title"></h3>
+          <div class="balloons__result-body"></div>
+          <button class="btn btn--primary" data-continue>Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GUESS WHO SAID IT ===== -->
+    <section id="quiz" class="section section--game quiz gated">
+      <div class="quiz__header">
+        <h2>Who Said It?</h2>
+        <p class="subtitle">Guess who said each quote</p>
+        <div class="quiz__counter">1 / 10</div>
+      </div>
+      <div class="quiz__card">
+        <p class="quiz__quote"></p>
+      </div>
+      <div class="quiz__choices"></div>
+      <div class="quiz__feedback"></div>
+      <div class="quiz__complete">
+        <h3>Results</h3>
+        <div class="quiz__score-big">0 / 10</div>
+        <p class="quiz__result-msg"></p>
+        <button class="btn btn--primary" data-continue>Continue</button>
+      </div>
+    </section>
+
+    <!-- ===== PROOF SCREENSHOTS ===== -->
+    <section id="proof" class="section proof gated">
+      <div class="proof__header">
+        <h2>Don't believe me?</h2>
+        <p class="subtitle">Here's the proof</p>
+      </div>
+      <div class="proof__list">
+        <!-- JS populates screenshots -->
+      </div>
+    </section>
+
+    <!-- ===== FINAL LETTER ===== -->
+    <section id="letter" class="section letter gated">
+      <div class="letter__sparkles" aria-hidden="true"></div>
+      <div class="letter__content">
+        <h2 class="letter__greeting font-script">A letter for you</h2>
+        <div class="letter__divider"></div>
+        <div class="letter__body"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONFETTI FINALE ===== -->
+    <section id="finale" class="section finale gated">
+      <canvas class="finale__canvas"></canvas>
+      <div class="finale__content">
+        <h1 class="finale__title">Thank you for your time</h1>
+        <h2 class="finale__subtitle font-script">Happy Birthday!</h2>
+      </div>
+      <div class="finale__hearts" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

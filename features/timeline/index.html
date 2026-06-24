@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline - Sweet 16</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="timeline.css">
+</head>
+<body>
+
+  <section class="timeline">
+    <div class="timeline__header">
+      <h2>A little trip down memory lane</h2>
+      <p class="subtitle">Scroll down to explore</p>
+    </div>
+
+    <div class="timeline__wheel">
+      <!-- JS populates slides -->
+    </div>
+
+    <div class="timeline__dots"></div>
+
+    <div class="timeline__hint">
+      <span>Scroll down</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+
+    <div class="timeline__complete">
+      <h3>That was fun, right?</h3>
+      <p>&lt;transition text&gt;</p>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initTimeline } from './timeline.js';
+
+    initTimeline(() => {
+      console.log('Timeline complete!');
+    });
+  </script>
+</body>
+</html>

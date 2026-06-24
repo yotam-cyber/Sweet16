@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balloons - Sweet 16</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="balloons.css">
+</head>
+<body>
+
+  <section class="balloons">
+    <div class="balloons__header">
+      <h2>Catch the Balloons!</h2>
+      <p class="subtitle">Tap them before they fly away</p>
+      <div class="balloons__score">Caught: <span class="balloons__caught-count">0</span> / 10</div>
+    </div>
+
+    <div class="balloons__arena">
+      <canvas class="balloons__canvas"></canvas>
+      <div class="balloons__flash">Catch the balloons!</div>
+      <div class="balloons__sentence"></div>
+
+      <div class="balloons__complete">
+        <h3 class="balloons__result-title"></h3>
+        <div class="balloons__result-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initBalloons } from './balloons.js';
+
+    initBalloons(() => {
+      console.log('Balloon game complete!');
+    });
+  </script>
+</body>
+</html>

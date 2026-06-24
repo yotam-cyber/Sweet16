@@ -1,0 +1,56 @@
+/* ===== MAIN SCROLL CONTAINER ===== */
+#app {
+  width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  width: 100%;
+  padding: var(--space-xl) var(--space-md);
+  position: relative;
+}
+
+.section--fullscreen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section--game {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* All sections after welcome start hidden, JS reveals them progressively */
+.section.gated {
+  display: none;
+}
+
+.section.gated.revealed {
+  display: flex;
+}
+
+/* ===== SECTION DIVIDER ===== */
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--clr-secondary);
+  border-radius: var(--radius-pill);
+  margin: var(--space-lg) auto;
+}
+
+/* ===== GAME CANVAS ===== */
+canvas {
+  touch-action: none;
+}

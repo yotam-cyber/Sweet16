@@ -1,0 +1,222 @@
+/* ===== MEMORY GAME ===== */
+.memory {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg) var(--space-sm);
+  position: relative;
+  overflow: hidden;
+  background: var(--clr-bg);
+}
+
+.memory__header {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.memory__header h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.memory__header .subtitle {
+  color: var(--clr-text-secondary);
+  font-size: 0.95rem;
+}
+
+.memory__moves {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 18px;
+  background: var(--clr-secondary);
+  border-radius: var(--radius-pill);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--clr-text);
+  margin-top: var(--space-sm);
+}
+
+/* ===== GRID ===== */
+.memory__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1;
+}
+
+/* ===== CARD ===== */
+.memory__card {
+  aspect-ratio: 1;
+  perspective: 600px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.memory__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s var(--ease-spring);
+  transform-style: preserve-3d;
+}
+
+.memory__card.flipped .memory__card-inner {
+  transform: rotateY(180deg);
+}
+
+.memory__card.matched .memory__card-inner {
+  transform: rotateY(180deg);
+}
+
+.memory__card-front,
+.memory__card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Front (face down) */
+.memory__card-front {
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+  box-shadow:
+    3px 3px 8px rgba(244, 114, 182, 0.2),
+    -2px -2px 6px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.memory__card-front::after {
+  content: '?';
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Back (face up - shows image) */
+.memory__card-back {
+  background: var(--clr-card);
+  border: 2px solid var(--clr-border);
+  box-shadow: var(--shadow-clay);
+  transform: rotateY(180deg);
+}
+
+.memory__card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memory__card-back-placeholder {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.65rem;
+  color: var(--clr-text-secondary);
+  text-align: center;
+  padding: 4px;
+  word-break: break-word;
+}
+
+/* ===== STAR CARD (center) ===== */
+.memory__card--star .memory__card-front {
+  background: linear-gradient(135deg, var(--clr-gold), #FBBF24);
+}
+
+.memory__card--star .memory__card-front::after {
+  content: '★';
+  font-size: 1.6rem;
+}
+
+.memory__card--star .memory__card-back {
+  background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+  border-color: var(--clr-gold);
+}
+
+.memory__card--star .memory__card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== MATCHED STATE ===== */
+.memory__card.matched {
+  pointer-events: none;
+}
+
+.memory__card.matched .memory__card-back {
+  border-color: var(--clr-success);
+  box-shadow: 0 0 12px rgba(134, 239, 172, 0.4);
+}
+
+@keyframes matchPop {
+  0% { transform: rotateY(180deg) scale(1); }
+  50% { transform: rotateY(180deg) scale(1.1); }
+  100% { transform: rotateY(180deg) scale(1); }
+}
+
+.memory__card.matched .memory__card-inner {
+  animation: matchPop 0.4s var(--ease-spring);
+  animation-fill-mode: forwards;
+}
+
+/* ===== WRONG MATCH SHAKE ===== */
+@keyframes wrongShake {
+  0%, 100% { transform: rotateY(180deg) translateX(0); }
+  20% { transform: rotateY(180deg) translateX(-4px); }
+  40% { transform: rotateY(180deg) translateX(4px); }
+  60% { transform: rotateY(180deg) translateX(-3px); }
+  80% { transform: rotateY(180deg) translateX(3px); }
+}
+
+.memory__card.wrong .memory__card-inner {
+  animation: wrongShake 0.4s ease-in-out;
+}
+
+/* ===== COMPLETE OVERLAY ===== */
+.memory__complete {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  background: rgba(255, 248, 240, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--ease-smooth);
+}
+
+.memory__complete.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.memory__complete h3 {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--clr-primary);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+}
+
+.memory__complete p {
+  color: var(--clr-text-secondary);
+  text-align: center;
+  max-width: 280px;
+}

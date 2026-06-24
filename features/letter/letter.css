@@ -1,0 +1,103 @@
+/* ===== FINAL LETTER ===== */
+.letter {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--clr-bg) 0%, #FFF1F5 50%, var(--clr-bg) 100%);
+}
+
+/* ===== SPARKLES BACKGROUND ===== */
+.letter__sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.letter__sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--clr-gold);
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkle var(--dur, 3s) var(--delay, 0s) infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 0.8; transform: scale(1); }
+}
+
+/* ===== CONTENT ===== */
+.letter__content {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.letter__greeting {
+  font-size: clamp(2rem, 8vw, 3rem);
+  color: var(--clr-text);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.letter__divider {
+  width: 60px;
+  height: 3px;
+  background: var(--clr-secondary);
+  border-radius: var(--radius-pill);
+  margin: var(--space-md) auto var(--space-xl);
+}
+
+/* ===== LETTER BODY ===== */
+.letter__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+.letter__paragraph {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--clr-text);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.letter__paragraph.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SIGNATURE ===== */
+.letter__signature {
+  margin-top: var(--space-xl);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(1.5rem, 6vw, 2.2rem);
+  color: var(--clr-primary);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s var(--ease-out) 0.2s, transform 0.8s var(--ease-out) 0.2s;
+}
+
+.letter__signature.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

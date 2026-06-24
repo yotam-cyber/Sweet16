@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter - Sweet 16</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+
+  <!-- Feature CSS -->
+  <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+
+  <section class="letter">
+    <div class="letter__sparkles" aria-hidden="true"></div>
+    <div class="letter__content">
+      <h2 class="letter__greeting font-script">A letter for you</h2>
+      <div class="letter__divider"></div>
+      <div class="letter__body">
+        <!-- JS populates paragraphs -->
+      </div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initLetter } from './letter.js';
+    initLetter();
+  </script>
+</body>
+</html>

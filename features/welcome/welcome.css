@@ -1,0 +1,32 @@
+/* ===== WELCOME SECTION ===== */
+.welcome {
+  gap: var(--space-lg);
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+  text-align: center;
+}
+
+.welcome__title {
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+.welcome__subtitle {
+  font-size: 1rem;
+  margin-top: calc(-1 * var(--space-sm));
+}
+
+/* ===== SCROLL HINT ===== */
+.welcome__scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+  color: var(--clr-text-secondary);
+  font-size: 0.9rem;
+}
+
+.welcome__scroll-hint svg {
+  stroke: var(--clr-primary);
+}

@@ -1,0 +1,92 @@
+/* ===== CONFETTI FINALE ===== */
+.finale {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--clr-bg);
+}
+
+/* ===== CANVAS ===== */
+.finale__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===== TEXT ===== */
+.finale__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.finale__title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: clamp(1.6rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--clr-gold);
+  text-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+  opacity: 0;
+  transform: scale(0.8);
+  animation: finaleReveal 1s var(--ease-spring) 0.3s forwards;
+}
+
+.finale__subtitle {
+  font-size: clamp(2rem, 9vw, 3.5rem);
+  color: var(--clr-primary);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: finaleReveal 1s var(--ease-spring) 0.8s forwards;
+}
+
+@keyframes finaleReveal {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ===== FLOATING HEARTS ===== */
+.finale__hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.finale__heart {
+  position: absolute;
+  bottom: -30px;
+  opacity: 0;
+  animation: floatUp var(--dur, 6s) var(--delay, 0s) infinite;
+}
+
+.finale__heart::before {
+  content: '';
+  display: block;
+  width: var(--size, 16px);
+  height: var(--size, 16px);
+  background: var(--clr, var(--clr-primary));
+  clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
+}
+
+@keyframes floatUp {
+  0% { opacity: 0; transform: translateY(0) rotate(0deg); }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.4; }
+  100% { opacity: 0; transform: translateY(-110vh) rotate(25deg); }
+}
